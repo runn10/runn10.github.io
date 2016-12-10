@@ -1,0 +1,205 @@
+/* MY ORIGINAL CSS CODE*/
+
+html, body {
+  height:100%;
+  width: 100%;
+}
+
+#pulsate {
+  -webkit-animation: pulsate 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.5
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+
+.clearing-thumbs, [data-clearing] {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0; }
+  .clearing-thumbs:before, .clearing-thumbs:after, [data-clearing]:before, [data-clearing]:after {
+    content: " ";
+    display: table; }
+  .clearing-thumbs:after, [data-clearing]:after {
+    clear: both; }
+  .clearing-thumbs li, [data-clearing] li {
+    float: left;
+    margin-right: 10px; }
+  .clearing-thumbs[class*="block-grid-"] li, [data-clearing][class*="block-grid-"] li {
+    margin-right: 0; }
+
+.th {
+  border: solid 4px #FFFFFF;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  line-height: 0;
+  max-width: 100%;
+  transition: all 200ms ease-out;
+}
+  .th:hover, .th:focus {
+    box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5); }
+  .th.radius {
+    border-radius: 3px; }
+
+.mainBody {
+  background-color: #ccffcc;
+  margin: 0;
+  padding: 0;
+}
+
+.mainBody h1 {
+  font-family: 'Bungee Inline', cursive;
+  font-family: 'Baloo Bhaina', cursive;
+}
+
+.mainBody h3 {
+  font-family: 'Bungee Inline', cursive;
+  font-family: 'Baloo Bhaina', cursive;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.mainBody h3 img {
+  align: right;
+}
+
+ul.tabs {
+  text-align: center;
+  font-family: "Shrikhand", cursive;
+  font-size: 150%;
+  text-decoration: underline;
+  background-color: #f7bb7b;
+}
+
+.aboutBody {
+  background-color: #ffffcc;
+  margin: 0;
+  padding: 0;
+}
+
+#headShot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 8px #666666 solid;
+  border-radius: 15px;
+}
+
+.contactBody {
+  background-color: #c68181;
+  text-align:center;
+  color:black;
+  margin: 0;
+  padding: 0;
+}
+
+.contactBody a:link {
+  color: green;
+}
+
+.musicBody {
+  background-color: #6273f4;
+  margin: 0;
+  padding: 0;
+}
+
+.visualArtBody {
+  background-color:#bf89a1;
+  margin: 0;
+  padding: 0;
+}
+
+.visualArtBody ul li img {
+  width: 200px;
+  align-items: center;
+}
+
+.softBody {
+  background-color: #93c6c2;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/*
+@media only screen and (max-device-width: 480px) {
+  .row {
+    background-size: auto;
+    float:none;
+    margin:0;
+    width:auto;
+  }
+}
+
+@media only screen and (max-device-width: 800px) {
+  .row {
+    background-size: 50%;
+    float:none;
+    margin:0;
+    width:auto;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .row {
+    float:none;
+    margin:0;
+    width:auto;
+  }
+}
+*/
+
+
+
+
+/* line 1221 foundation.css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align:center; /*add*/
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* line 376 foundation.css */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #0a0a0a;
+  background: #fefefe;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  border: 10px solid black;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
+}
